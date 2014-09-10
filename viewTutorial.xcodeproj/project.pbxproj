@@ -21,6 +21,7 @@
 		CBF1CC8919C01E28005ED7E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBF1CC6B19C01E28005ED7E6 /* UIKit.framework */; };
 		CBF1CC9119C01E28005ED7E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBF1CC8F19C01E28005ED7E6 /* InfoPlist.strings */; };
 		CBF1CC9319C01E28005ED7E6 /* viewTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF1CC9219C01E28005ED7E6 /* viewTutorialTests.m */; };
+		CBF1CC9E19C01FF2005ED7E6 /* DDGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF1CC9D19C01FF2005ED7E6 /* DDGrid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		CBF1CC8E19C01E28005ED7E6 /* viewTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "viewTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		CBF1CC9019C01E28005ED7E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CBF1CC9219C01E28005ED7E6 /* viewTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = viewTutorialTests.m; sourceTree = "<group>"; };
+		CBF1CC9C19C01FF2005ED7E6 /* DDGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGrid.h; sourceTree = "<group>"; };
+		CBF1CC9D19C01FF2005ED7E6 /* DDGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGrid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +115,14 @@
 		CBF1CC6D19C01E28005ED7E6 /* viewTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				CBF1CC9F19C0EB42005ED7E6 /* iPad */,
 				CBF1CC7619C01E28005ED7E6 /* DDAppDelegate.h */,
 				CBF1CC7719C01E28005ED7E6 /* DDAppDelegate.m */,
 				CBF1CC7919C01E28005ED7E6 /* Main.storyboard */,
 				CBF1CC7C19C01E28005ED7E6 /* DDViewController.h */,
 				CBF1CC7D19C01E28005ED7E6 /* DDViewController.m */,
+				CBF1CC9C19C01FF2005ED7E6 /* DDGrid.h */,
+				CBF1CC9D19C01FF2005ED7E6 /* DDGrid.m */,
 				CBF1CC7F19C01E28005ED7E6 /* Images.xcassets */,
 				CBF1CC6E19C01E28005ED7E6 /* Supporting Files */,
 			);
@@ -150,6 +156,13 @@
 				CBF1CC8F19C01E28005ED7E6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBF1CC9F19C0EB42005ED7E6 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF1CC7819C01E28005ED7E6 /* DDAppDelegate.m in Sources */,
+				CBF1CC9E19C01FF2005ED7E6 /* DDGrid.m in Sources */,
 				CBF1CC7E19C01E28005ED7E6 /* DDViewController.m in Sources */,
 				CBF1CC7419C01E28005ED7E6 /* main.m in Sources */,
 			);
@@ -380,7 +394,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "viewTutorial/viewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "viewTutorial/viewTutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -393,7 +409,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "viewTutorial/viewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "viewTutorial/viewTutorial-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
